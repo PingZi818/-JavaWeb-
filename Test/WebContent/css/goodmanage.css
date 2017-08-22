@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+.container{
+	width:100%;
+	height:100%;
+	background-image: url("../images/Redocn_2010010608582778_副本.jpg");
+	background-repeat:no-repeat;
+	 background-position: center;
+	}
+body{height: 800px}

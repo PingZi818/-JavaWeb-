@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员注册页面</title>
+    <link rel="stylesheet" href="css/zhuce.css">
+    <script type="text/javascript">
+        
+        function check_submit(){
+        	var inputs=document.getElementsByTagName("input");
+        	for(var i=0;i<inputs.length;i++){
+        		if(inputs[i].value==null||inputs[i].value==""){
+        			alert("输入内容不完整，请重新填写");
+        			return false;
+        		}
+        	}
+        	return true;
+        }
+        function check_passwd(){
+        	
+        	if(userpasswd2.value!=userpasswd.value){
+        		alert("两次输入密码不同，请重新填写!");
+        		return false;
+        	}
+        	return true;
+        }
+        
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="header" >
+        <table width="100%" height="130" border="0">
+            <tr>
+                <td width="21%" rowspan="2">&nbsp;</td>
+                <td width="13%" rowspan="2"><a href="fashion.jsp"><img src="images/logo_副本3.png" width="165" height="85" alt=""/></a></td>
+                <td width="13%" rowspan="2">&nbsp;</td>
+                <td width="40%">&nbsp;</td>
+                <td width="13%" height="37">&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="40%"><img src="images/object.png" width="502" height="85" alt=""/></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="mainbody">
+        <div class="content">
+            <table width="382"  border="0" align="center" cellpadding="0" cellspacing="0" class="tlogin">
+                <tr>
+                    <td width="12" rowspan="3"  class="tlogin bk">&nbsp;</td>
+                    <td width="40"  style="color: #F42E31; font-size: 16; font-style: inherit; font-weight: lighter;">&nbsp;</td>
+                    <td width="134" ><strong style="color: #ED292C">用户注册</strong></td>
+                    <td width="195"  style="font-size: 16px; color: #F84E51;"><span style="color: #969696">已有账号在此<a href="login.html">登录</a></span></td>
+                    <td width="8" rowspan="3"  class="tlogin bk">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3" ><table width="300" border="0" align="center" cellpadding="3" cellspacing="0">
+                        <form name="form2" method="post" action="do_register.jsp" onsubmit = "return check_submit()">
+                            <table width="100%" height="105" border="0" >
+                                <tr>
+                                    <td width="30%" height="30">用户名：</td>
+                                    <td width="73%" height="30"><input name="username" type="text" id="username">
+                                        *</td>
+                                </tr>
+                                <tr>
+                                    <td height="30">密码：</td>
+                                    <td height="30"><input name="userpasswd" type="password" id="userpasswd">
+                                        *</td>
+                                </tr>
+                                <tr>
+                                    <td height="30">确定密码：</td>
+                                    <td height="30"><input name="userpasswd2" type="password" id="userpasswd2">
+                                        *</td>
+                                </tr>
+                                 <tr>
+                                    <td height="30">年龄：</td>
+                                    <td height="30"><input name="age" type="text" id="age" oninput="return check_passwd()"></td>
+                                </tr>
+                                <tr>
+                                    <td height="30">性别：</td>
+                                    <td height="30"><input name="sex" type="text" id="sex"></td>
+                                </tr>
+                                <tr>
+                                    <td height="30">电话：</td>
+                                    <td height="30"><input name="tel" type="text" id="tel"></td>
+                                </tr>
+                                <tr>
+                                    <td height="30">地址：</td>
+                                    <td height="30"><input name="address" type="text" id="address"></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td><input type="submit" name="Submit" value="提交"></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td colspan="3" >&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="foot">
+        <table width="100%" border="0">
+            <img src="images/QQ图片20160818104117.png">
+            <tr>
+                <td width="29%">&nbsp;</td>
+                <td width="40%" style="text-align: center">@美美网版权所有 盗版必究</td>
+                <td width="31%">&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

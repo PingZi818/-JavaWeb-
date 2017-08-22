@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员登录页面</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
+
+
+    <script type="text/javascript">
+       
+        function Mycheck(){
+            if(document.all.username.value==""){
+                alert('请输入用户名!');return false;}
+            if(document.all.userpasswd.value==""){
+                alert('请输入密码!');return false;}
+            if(document.all.checkcode.value==""){
+                alert('请输入验证码!');return false;}
+            
+        }
+        function change(){
+    		//切换验证码
+    		document.getElementById("myimg").src="/Web/CheckcodeServlet?"+new Date().getTime();
+        }
+   
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="header" >
+        <table width="100%" height="130px" border="0">
+            <tr>
+                <td width="21%" rowspan="2">&nbsp;</td>
+                <td width="13%" rowspan="2"><a href="fashion.jsp"><img src="images/logo_副本1.png" width="165" height="85" alt=""/></a></td>
+                <td width="13%" rowspan="2">&nbsp;</td>
+                <td width="40%">&nbsp;</td>
+                <td width="13%" height="37">&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="40%"><img src="images/object.png" width="502" height="85" alt=""/></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="mainbody">
+        <div class="content">
+            <table width="382" height="325"  border="0" align="center" cellpadding="0" cellspacing="0" class="tlogin">
+                <tr>
+                    <td width="12" rowspan="4"  class="tlogin bk">&nbsp;</td>
+                    <td width="33"  style="color: #F42E31; font-size: 16; font-style: inherit; font-weight: lighter;">&nbsp;</td>
+                    <td width="134" ><strong style="color: #ED292C">登录美美</strong></td>
+                    <td width="195" style="font-size: 16px; color: #F84E51;"><span style="color: #969696">还没美美帐号？马上</span><a href="register.html">注册</a></td>
+                    <td width="8" rowspan="4"  class="tlogin bk">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td height="224" colspan="3" ><table width="300" border="0" align="center" cellpadding="3" cellspacing="0">
+                        <form name = "form1" method="post" action="do_login.jsp" onsubmit = "return Mycheck()">
+                            <tr>
+                                <td height="22" colspan="2" align="center" >用户登录</td>
+                            </tr>
+                            <tr>
+                                <td width="81" height="22" >用户名:</td>
+                                <td width="207" height="22"><input name="username" type="text" class="textbox" id="usernamse" size="19" maxlength="50"></td>
+                            </tr>
+                            <tr>
+                                <td height="22" >密码:</td>
+                                <td height="22" ><input name="userpasswd" type="password" class="textbox" id="userpasswd" size="19" maxlength="50"></td>
+                            </tr>
+                            <tr>
+                            <td height = "28" >验证码:</td>
+                            <td height = "67" rowspan="2"><input type="Captcha" class="Captcha" name="checkcode" placeholder="请输入验证码！">
+<img id="myimg" src="/Web/CheckcodeServlet"  align="right"   style="cursor:pointer; " onclick="change();"/></td>
+                           
+                            </tr>
+                            <tr>
+                              <td height = "32"  align="right" >&nbsp;</td>
+                            </tr>
+                         
+                            <tr>
+                                <td height="22" colspan="2" align="center"><input name="login" type="submit" id="login" value="登 录" class="button" onClick="return Mycheck()">
+                                    &nbsp;
+                                    <input type="reset" name="Submit2" value="重 置" class="button"></td>
+                            </tr>
+                          
+                        </form>
+                    </table>
+                    <p>&nbsp;   </p></td>
+              </tr>
+                <tr>
+                  <td ><a href="managerlogin.html" style="color: #F71619"></a></td>
+                  <td ><a href="managerlogin.html" style="color: #F71619">管理员登录</a></td>
+                  <td ><a href="managerlogin.html" style="color: #F71619"></a></td>
+              </tr>
+                <tr>
+                    <td colspan="3" >&nbsp;</td>
+                </tr>
+            </table>
+      </div>
+    </div>
+    <div class="foot">
+        <img src="images/QQ图片20160818104117.png" >
+        <table width="100%" border="0">
+            <tr>
+                <td width="29%">&nbsp;</td>
+                <td width="40%" style="text-align: center">@美美网版权所有 盗版必究</td>
+                <td width="31%">&nbsp;</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>

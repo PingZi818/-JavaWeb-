@@ -1,0 +1,45 @@
+/* CSS Document */
+
+/* CSS Document */
+.container{
+    margin-top: 100px;
+}
+body{height: 859px}
+.header{
+    width: 100%;
+    margin-top: 22px;
+
+}
+.logoclass{margin-left: 320px;margin-top: 20px}
+
+.mainbody{
+    width: 100%;
+    background-image: url("../images/signPic.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 450px;
+}
+
+.content{
+    float: right;
+    margin-right: 250px;
+    margin-top: 70px;
+}
+.tlogin{
+
+}
+.ob{
+    margin-left: 810px;
+    margin-top: 10px;
+    height: 85px
+}
+.tablewordstyle{}
+.foot{
+    text-align: center;
+    margin-top: 200px;
+
+}
+.bk {
+    background-image: url(../images/shadow.png);
+}

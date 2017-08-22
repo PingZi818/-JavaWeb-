@@ -1,0 +1,142 @@
+/* css reset */
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input{margin: 0; padding: 0; border: 0;}
+body{font-size: 16px; font-family: 'microsoft yahei', Verdana;}
+ul, ol{list-style-type: none;}
+select, input, img{vertical-align: middle; outline: none; border: 0}
+html{overflow-x: hidden; font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
+p, dd, pre{word-break: break-all}
+button, input, textarea{font-size: 100%; margin: 0; vertical-align: baseline; outline: none;}
+input, button{-webkit-appearance: appearance; -moz-appearance: appearance;}
+textarea{vertical-align: top; padding: 3px; word-wrap: break-word; word-break: break-all; resize: none; -webkit-box-shadow: none; -webkit-border-radius: 0}
+table{border-collapse: collapse; border-spacing: 0}
+em, i{font-style: normal}
+a, a:hover{text-decoration: none; outline: none; color: #e73a77; blr: expression(this.onFocus=this.blur())}
+a{color: #666}
+.clearfix:after{content: ""; display: block; clear: both;}
+.clearfix{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+.pr{position: relative;}
+.wrap{width: 1100px; margin: 0 auto; position: relative;}
+.wrap:after{content: ".";display: block; height: 0;clear: both;visibility: hidden;}
+.wrap{*zoom:1;}
+.pr h1{text-indent: -99em; overflow: hidden; font-size: 0; width:1100px}
+/* placeholder鏍峰紡 */
+::-webkit-input-placeholder{}
+:-moz-placeholder{}
+::-moz-placeholder{}
+:-ms-input-placeholder{}
+
+/* 整站全局css */
+.newHome-head-top{height: 28px; border-bottom: 1px solid #DCE3DB; background: #EEECED; text-align: center}
+.newHome-head-top a{color: #666}
+.newHome-head-top a:hover{color: #e73a77}
+.newHome-head-center{height: 120px; background: #fff}
+.newHome-nav{height: 44px; background: #383838; position: relative; z-index: 2}
+.newHome-nav-list li{float: left; width: 125px; position: relative}
+.newHome-nav-list li.allproduct-type{width: 200px;}
+.newHome-nav-list li a{display: block; text-align: center; font: 16px/44px 'microsoft yahei'; color: #fff}
+.newHome-nav-list li a.active{background: #E73A77}
+.newHome-nav-list li a.onons{background: #E73A77}
+.newHome-nav-list #allproduct-icon{display: block; width: 13px; height: 13px; background: url("../image/newHome-icon.png") no-repeat -10px -28px; position: absolute; left: 155px; top: 12px}
+.newHome-nav-list #home-icon{display: block; width: 15px; height: 15px; background: url("../image/newHome-icon.png") no-repeat -35px -26px; position: absolute; left: 30px; top: 12px}
+.newHome-nav-list #temai-icon{display: block; width: 29px; height: 17px; background: url("../image/newHome-icons.png") no-repeat -42px -162px; position: absolute; left: 90px; top: 3px}
+.newHome-nav-list #beauty-icon{display: block; width: 18px; height: 18px; background: url("../image/newHome-icon.png") no-repeat -61px -24px; position: absolute; left: 20px; top: 10px}
+.newHome-nav-list #trial-icon{display: block; width: 29px; height: 17px; background: url("../image/newHome-icons.png") no-repeat -80px -180px; position: absolute; left: 101px; top: 3px}
+.newHome-nav-list #new-icon{display: block; width: 29px; height: 17px; background: url("../image/newHome-icons.png") no-repeat -80px -179px; position: absolute; left: 101px; top: 3px}
+.newHome-nav-list #hot-icon{display: block; width: 29px; height: 17px; background: url("../image/newHome-icons.png") no-repeat -119px -184px; position: absolute; left: 101px; top: 3px}
+.newHome-nav-view{border: 3px solid #ff9065; border-top: 0; background: #fff; padding: 5px 5px 5px 45px; position: absolute; z-index: 4; left: 0; top: 38px; width: 1042px; height: 231px; display: none}
+.newHome-nav-view-list{display: block; position: relative; z-index: 4}
+.newHome-nav-view-list.active{display: block}
+.newHome-nav-view .newHome-nav-view-subbanner{position: absolute; right: 5px; top: 5px}
+
+.newHome-query-link{width: 350px; position: absolute; left: 270px; top: 75px; z-index: 1; background: #fff; box-shadow: 1px 1px 10px #999; display: none}
+.newHome-query-link li{height: 28px; text-indent: 10px; line-height: 28px; text-overflow: ellipsis; white-space: nowrap;  width: 100%; overflow: hidden; color: #666}
+.newHome-query-link li:hover{background: #f1f1f1; font: 12px/28px "microsoft yahei"; cursor: default}
+
+.allproducts-type-nav{width: 200px; height: 450px; background: #fff; position: absolute; z-index: 4; left: 0; top: 44px; display: none}
+.allproducts-type-nav li{border-bottom: 1px solid #e3e3e3; height: 74px; width: 100%; float: none; position: relative}
+.allproducts-type-nav li.active{background: #f9f9f9;}
+.allproducts-type-nav h4 a{color: #666; font: bold 12px/24px 'microsoft yahei'; text-align: left; padding-top: 5px; padding-left: 40px}
+.allproducts-type-nav h4 a:hover{color: #e73a77}
+.allproducts-type-nav #type-icons-1{ background-position:  0 -60px; }
+.allproducts-type-nav #type-icons-2{ background-position:  -40px -60px; }
+.allproducts-type-nav #type-icons-3{ background-position:  -80px -60px; }
+.allproducts-type-nav #type-icons-4{ background-position:  -120px -60px; }
+.allproducts-type-nav #type-icons-5{ background-position:  -160px -60px; }
+.allproducts-type-nav #type-icons-6{ background-position:  -200px -60px; }
+.allproducts-type-nav li:hover #type-icons-1{background-position:  0 -100px;}
+.allproducts-type-nav li:hover #type-icons-2{background-position:  -40px -100px;}
+.allproducts-type-nav li:hover #type-icons-3{background-position:  -80px -100px;}
+.allproducts-type-nav li:hover #type-icons-4{background-position:  -120px -100px;}
+.allproducts-type-nav li:hover #type-icons-5{background-position:  -160px -100px;}
+.allproducts-type-nav li:hover #type-icons-6{background-position:  -200px -100px;}
+.allproducts-type-nav .allproducts-type-div a{font: normal 12px/20px 'microsoft yahei'; color: #666; text-align: left; width: 65px; float: left}
+.allproducts-type-nav .allproducts-type-div a:hover{color: #e73a77}
+.allproducts-type-nav .allproducts-type-div em{position: absolute; right: 15px; top: 10px}
+.allproducts-type-div{padding-left: 40px}
+.allproducts-subtype{width: 750px; background: #f9f9f9; position: absolute; top: 0; left: 190px; display: none}
+.allproducts-subtype ul{padding: 10px 20px}
+.allproducts-subtype li{border-bottom: 1px solid #e3e3e3; height: auto;  padding: 8px 0}
+.allproducts-subtype li dt a{font: bold 12px/30px 'microsoft yahei'; color: #666; text-align: left; float: left; margin-right: 20px; width: auto }
+.allproducts-subtype li dd a{font: normal 12px/30px 'microsoft yahei'; color: #666; text-align: left; width: auto; float: left; margin-right: 20px;}
+.allproducts-subtype li dd a:hover,.allproducts-subtype li dt a:hover{color: #e73a77}
+
+.service{position:absolute; right:0px; width:85px; padding:5px; cursor:pointer; top:2px;}
+.service_unfold{display:none; position:absolute; right:0px; width:80px; padding-top:5px; background:#fff; border:1px solid #E8E8E8; z-index:1;top:2px}
+.service_unfold a{display:block; height:25px; line-height:25px;}
+.service_unfold span{color:#e73a77; cursor:pointer; display:block; height:25px;}
+.myxz{ position:absolute; right:90px; width:90px; height:22px; padding-top:5px; cursor:pointer; top:2px;}
+.myxz_unfold{display:none; position:absolute; right:90px; width:80px; padding-top:5px; background:#fff; border:1px solid #E8E8E8; z-index:20; top:2px;}
+.myxz_unfold a{display:block; height:25px; line-height:25px;}
+.myxz_unfold span{color:#e73a77; cursor:pointer; display:block; height:25px;}
+.myorder{position:absolute; right:170px; width:80px; height:22px; padding-top:5px; cursor:pointer; top:2px;}
+.myorder_unfold{display:none; position:absolute; right:155px; width:80px; height:160px; padding-top:5px; background:#fff; border:1px solid #E8E8E8; z-index:20;}
+.myorder_unfold a{display:block;}
+.myorder_unfold span{color:#e73a77; cursor:pointer;}
+
+.welcome{ position:absolute; right:250px; width:268px; height:22px; padding:5px; text-align:right; top: 2px;}
+.myxz a,.myorder a,.service a{top:6px;height:15px;}
+.line{position:absolute;right:85px;height:15px;width:1px;background:#666666;top:6px;}
+.line2{position:absolute;right:173px;height:15px;width:1px;background:#666666;top:6px;}
+
+.newHome-nav-view-list dl{float: left; margin-right: 50px; _display: inline}
+.newHome-nav-view-list dt{font: bold 14px/20px 'MICROSOFT YAHEI'; color: #676767; border-bottom: 1px solid #EFEFEF; margin-bottom: 3px; margin-top: 10px}
+.newHome-nav-view-list dd a{font: 14px/20px 'MICROSOFT YAHEI'; color: #A1A1A1; text-align: left}
+.newHome-nav-view-list dt a{font: bold 14px/20px 'MICROSOFT YAHEI'; color: #444; text-align: left}
+.newHome-nav-view-list dd a:hover,.newHome-nav-view-list dd a:active{color: #ff9065}
+
+.slogan{ position:absolute; left:0px; bottom:-8px; color:#e73a77;font-size:12px; overflow:hidden; background:#fff; font-family:Verdana, Geneva, sans-serif; line-height:23px;/*text-shadow:1px 0 0 red,0 1px 0 blue,2px 2px 0 yellow,0 0 1px orange*/}
+.slogan a.slo_txt{  width:198px; height:23px; overflow:hidden;display:block;color:#e73a77;border:1px solid #e73a77; font-size:12px}
+.slogan a.slo_txt:hover{ background:#ff83b5; color:#fff; cursor:pointer;border:1px solid #ff83b5;}
+.slo_txt span{ position:absolute;-webkit-animation: neon1 1.2s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.2s ease-in-out infinite alternate;
+  animation: neon1 1.2s ease-in-out infinite alternate; font-size:12px; text-align:center; display:block; width:100%;}
+/*glow for webkit*/
+@-webkit-keyframes neon1 {
+  to {color:#fff;text-shadow: 0 0 1px #FD90B7,0 0 2px #FD90B7,0 0 2px #FD90B7,0 0 2px #FF1177,0 0 2px #FF1177,0 0 2px #FF1177,0 0 2px #FF1177,0 0 3px #FF1177;}
+}
+.slogan_mk{ position:absolute; left:0px;  bottom:0px; width:200px; height:25px }
+.slogan_mk a span{ margin-left:10px}
+
+
+.newHome-footer{width:100%;height:500px;background:url(../images/foot.jpg)no-repeat ;background-size:100%;font-size: 12px; }
+.footer-help{ float: left; margin-left: 50px; _display: inline}
+.footer-help dl{float: left; line-height: 2.5; margin-right:80px; text-align: left}
+.footer-help dt{font: bold 14px/14px 'microsoft yahei'; color: #666; margin-bottom:0px;}
+.footer-help dd a{color: #666}
+.footer-help dd a:hover{color: #e73a77}
+.bottom-code{float: left; font: bold 14px/14px 'microsoft yahei'; color: #666; text-align: center; margin-left: 50px; margin-right: 80px; _display: inline}
+.newHome-foot-contact{width: 205px; color: #666; line-height: 1.6; float: left}
+.newHome-foot-contact p{font-size: 12px; color: #666}
+.newHome-foot-contact a{color: #666}
+.newHome-foot-contact a:hover{color: #e73a77}
+.newHome-foot-contact .contact-tel{font: bold 26px/40px 'arial'}
+.foot2{width: 1350px;height: 40px; text-align: center;margin-top: 20px;padding-top: 30px;}
+.foot2_center1 { width: 1350px;height: 40px; font: normal 12px "microsoft yahei"; color: #666666; line-height: 40px; text-align: center; }
+.foot2_center1 a{color: #666; padding: 0 8px}
+.foot2_center1 a:hover{color: #e73a77}
+.foot2_center2 { width: 100%; margin: 0 auto; height: 100px; font: normal 12px "microsoft yahei"; color: #666666; line-height: 50px; text-align: center; }
+.foot2-bg{height: 26px; }
+
+/*dialog*/

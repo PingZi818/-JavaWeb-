@@ -1,0 +1,134 @@
+/*
+* Base Template
+* Combines HTML5 Boilerplate & Boostrap. Includes some basic templating.
+* Authored by Stephen Shaw (shshaw@gmail.com)
+*
+* Includes:
+*  - HTML5Boilerplate v4.2.0
+*  - LESS from Bootstrap v2.3.1
+*/
+
+
+a {
+  color: #da0d25;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #f22840;
+  text-decoration: none;
+}
+p {
+  margin: 0 0 20px;
+}
+small {
+  font-size: 85%;
+}
+strong {
+  font-weight: 600;
+}
+em {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+}
+
+h1{
+  margin: 10px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+h1 {
+  line-height: 40px;
+}
+h1 {
+  font-size: 41.25px;
+}
+
+.Button {
+  display: inline-block;
+  padding: 20px;
+  margin: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #7a0715;
+  text-shadow: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1;
+  -ms-transition: color 300ms ease, background-color 300ms ease;
+  -webkit-transition: color 300ms ease, background-color 300ms ease;
+  -moz-transition: color 300ms ease, background-color 300ms ease;
+  -o-transition: color 300ms ease, background-color 300ms ease;
+  transition: color 300ms ease, background-color 300ms ease;
+}
+.Button:hover,
+.Button:focus {
+  color: #7a0715;
+}
+.Button.Small {
+  padding: 5px 10px;
+  font-size: small;
+}
+.Button.Block1  {
+  background:url(../images/banner.png)no-repeat ;
+  padding: 20px 40px;
+  width: 1000px;
+  height: 400px;
+}
+.Button.Block2 {
+  background:url(../images/foot.jpg)no-repeat ;
+  padding: 20px 40px;
+  width:1000px;
+  height: 400px;
+}
+.Button.Block3 {
+  background:url(../images/banner1.jpg)no-repeat ;
+  padding: 20px 40px;
+  width:1000px;
+  height: 400px;
+}
+.Button.Block4 {
+  background:url(../images/banner2.png)no-repeat ;
+  padding: 20px 40px;
+  width: 1000px;
+  height:400px;
+}
+.Button.Block5 {
+  background:url(../images/banner3.png)no-repeat ;
+  padding: 20px 40px;
+  width: 1000px;
+  height:400px;
+}
+
+.Button h1 {
+  font-size: 2em;
+  line-height: 1.25em;
+  color: #FFF;
+}
+/* Custom Flipster Styles */
+.flipster {
+  padding-bottom: 50px;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.invisible {
+  visibility: hidden;
+}
+.affix {
+  position: fixed;
+}
